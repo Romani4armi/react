@@ -1,0 +1,55 @@
+
+header{
+  background-color: white;
+}
+
+.container{
+  width: 1232px;
+  margin: 0 auto;
+}
+
+.body_app{
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+  grid-template-areas: 
+  "nav content";
+}
+.nav{
+  grid-area: nav;
+
+}
+.content{
+  grid-area: content;
+}
+.content > img{
+  width: 100%;
+}
+.personAvatar{
+  background: url(https://thumbs.dreamstime.com/b/cosmos-beauty-deep-space-elements-image-furnished-nasa-science-fiction-art-102581846.jpg) center ;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+.content_space{
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.profil_space{
+    display: grid;
+    grid-template-columns:3fr 7fr ;
+    grid-template-areas:
+    "img name" ;
+}
+.img_avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.avatar_for_img{
+  grid-area: img;
+  text-align: center;
+}
+.name_avatar{
+  grid-area: name;
+  text-align: center;
+  font-size: 32px;
+}
